@@ -62,8 +62,8 @@ public class Mebel {
             return false;
         if(this.getClass() != otherObj.getClass())
             return false;
+        
         Mebel other = (Mebel) otherObj;
-
         return  Objects.equals(this.getNazwa(), other.getNazwa())
                 && this.getSzerokosc() == other.getSzerokosc()
                 && Objects.equals(this.getIloscNog(), other.getIloscNog())
