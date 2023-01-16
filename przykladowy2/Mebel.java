@@ -1,10 +1,12 @@
 import java.util.Objects;
 
 public class Mebel {
+    
     private final String nazwa;
     private final double dlugosc, szerokosc;
     private final Integer iloscNog;
     private static int ile;
+    
     public Mebel(String nazwa, double dlugosc, double szerokosc, Integer iloscNog) {
         this.nazwa = nazwa;
         this.dlugosc = dlugosc;
@@ -12,6 +14,7 @@ public class Mebel {
         this.iloscNog = iloscNog;
         ile++;
     }
+    
     public Mebel(double dlugosc, double szerokosc, Integer iloscNog) {
         this.nazwa = "Jakis Mebel";
         this.dlugosc = dlugosc;
@@ -19,6 +22,7 @@ public class Mebel {
         this.iloscNog = iloscNog;
         ile++;
     }
+    
     public String getNazwa() {
         return nazwa;
     }
@@ -34,6 +38,7 @@ public class Mebel {
     public Integer getIloscNog() {
         return iloscNog;
     }
+    
     @Override
     public String toString(){
         if (nazwa.equals("Jakis Mebel")) {
@@ -48,6 +53,7 @@ public class Mebel {
                 + this.szerokosc + "], ["
                 + this.iloscNog + "] ";
     }
+    
     @Override
     public boolean equals(Object otherObj){
         if(this == otherObj)
@@ -63,6 +69,7 @@ public class Mebel {
                 && Objects.equals(this.getIloscNog(), other.getIloscNog())
                 && this.getDlugosc() == other.getDlugosc();
     }
+    
     public static int getIle() {
         return ile;
     }
