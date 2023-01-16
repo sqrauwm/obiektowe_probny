@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 
 public class Biurko extends Mebel{
+    
     private LocalDate dataProdukcji;
     private final double przekatnaMonitora;
     
