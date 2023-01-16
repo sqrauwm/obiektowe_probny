@@ -30,7 +30,6 @@ public class Biurko extends Mebel{
     @Override
     public boolean equals(Object otherObj) {
         Biurko other = (Biurko) otherObj;
-
         return super.equals(otherObj)
                 && this.przekatnaMonitora == other.przekatnaMonitora
                 && this.getDataProdukcji().equals(other.getDataProdukcji());
